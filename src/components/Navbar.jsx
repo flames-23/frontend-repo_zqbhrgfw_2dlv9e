@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import Logo from './Logo'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -15,9 +16,8 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-[#042938]/70 border-b border-white/10">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-md bg-gradient-to-br from-[#96D4FF] to-[#4db7ff]" />
-          <span className="text-white/90 font-semibold tracking-wide">Medup</span>
+        <a href="#inicio" className="flex items-center gap-3">
+          <Logo className="w-28 h-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-6">
